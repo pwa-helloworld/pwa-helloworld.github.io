@@ -6,35 +6,80 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="white"/>
 	<link rel="manifest" href="manifest.json">
-	<link rel="icon" href="src/app-icon/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<script src="materialize.min.js"></script>
+	<!-- <link rel="icon" href="src/app-icon/favicon.ico" type="image/x-icon"> -->
+	
+	<meta name="msapplication-TileImage" content="src/app-icon/hello-icon-144.png">  
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<!-- ios support -->
+	<link rel="apple-touch-icon" href="src/pwa-icon/pwa-icon.png">
 	<meta name="apple-mobile-web-app-capable" content="yes">  
 	<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
 	<meta name="apple-mobile-web-app-title" content="Hello World"> 
-	<meta name="msapplication-TileImage" content="src/app-icon/hello-icon-144.png">  
-	<meta name="msapplication-TileColor" content="#FFFFFF">
-	
 	<!-- Library -->
 	<link rel="stylesheet" href="Library/fontawesome/css/all.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
 	<!--custom file-->
 	<link rel="stylesheet" href="css/style.css">
-
 </head>
+
 <body class="fullscreen">
   <div class="container">
-    <h1 class="title">Hello World!!!</h1>
+    <h1 class="title">Hello World</h1>
+		<button>
+			Click Me!
+		</button>
   </div>
 
-	<script src="js/main.js"></script>
+	<script src="app.js"></script>
 	<script src="sw.js"></script> 
 
-	<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- <script>
 		if ('serviceWorker' in navigator) {
 			navigator.serviceWorker.register('sw.js').then(function() {
 				console.log("SW registered");
 			});
 		}
-	</script>
+	</script> -->
+
+	
+	<!-- <script>
+		let deferredPrompt;
+		window.addEventListener('beforeinstallprompt', (e) => {
+			e.preventDefault();
+			deferredPrompt = e;
+
+			btnAdd.style.display = 'block';
+		});
+
+		btnAdd.addEventListener('click', (e) => {
+			deferredPrompt.prompt();
+			deferredPrompt.userChoice.then((choiceResult) => {
+				if (choiceResult.outcome === 'accepted') {
+					console.log("User accepted the prompt");
+				}
+				deferredPrompt = null;
+			});
+		});
+
+		window.addEventListener('appinstalled', (evt) => {
+			app.logEvent('a2hs', 'installed');
+		});
+	</script> -->
 </body>
 </html>
