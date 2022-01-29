@@ -1,6 +1,7 @@
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   body {
     font-family: sans-serif;
+    background: yellow;
   }
   
   /* Make content area fill the entire browser window */
