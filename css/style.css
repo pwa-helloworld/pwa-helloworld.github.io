@@ -7,8 +7,8 @@
   /* Make content area fill the entire browser window */
   html,
   .fullscreen {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     height: 100%;
     margin: 0;
     padding: 0;
