@@ -14,8 +14,8 @@
 	<!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="Library/Bootstrap/css/bootstrap.min.css">
-	<script src="Library/Bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- <link rel="stylesheet" href="Library/Bootstrap/css/bootstrap.min.css">
+	<script src="Library/Bootstrap/js/bootstrap.bundle.min.js"></script> -->
 	<!-- ios support -->
 	<link rel="apple-touch-icon" href="src/pwa-icon/pwa-icon.png">
 	<meta name="apple-mobile-web-app-capable" content="yes">  
@@ -29,18 +29,20 @@
 </head>
 
 <body class="fullscreen">
+	
   <!-- <div class="container ms-auto">
     <h1 class="title">Hello World</h1>
 		<button>
 			Click Me!!!
 		</button>
   </div> --> 
-
-	<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-		Link with href
+	<i class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" id="hamburger"></i>
+	<a class="btn btn-primary hamburger-container" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+		
 	</a>
-	<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-		Button with data-bs-target
+	<button class="btn btn-primary hamburger-container" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+		Button with
+		<i class="fa-solid fa-bars-sort" id="hamburger"></i>
 	</button>
 	
 	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -64,6 +66,8 @@
 			</div>
 		</div>
 	</div>
+
+	<i class="fa-solid fa-bars-sort" id="hamburger"></i>
 
 	<script src="app.js"></script>
 	<script src="sw.js"></script> 
