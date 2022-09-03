@@ -8,7 +8,9 @@ const assets = [
   'materialize.min.js',
   'css/style.css',
   'css/materialize.min.css',
-  'src/pwa-icon/pwa-icon.png'
+  'src/pwa-icon/pwa-icon.png',
+  'Library/Bootstrap/css/bootstrap.min.css',
+  'Library/Bootstrap/js/bootstrap.bundle.min.js'
 ];
 
 
